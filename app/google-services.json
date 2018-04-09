@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "805636879679",
+    "firebase_url": "https://ayro-testapp.firebaseio.com",
+    "project_id": "ayro-testapp",
+    "storage_bucket": "ayro-testapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805636879679:android:a36ab7707653f1da",
+        "android_client_info": {
+          "package_name": "io.ayro.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805636879679-u9fiug9di3uuf7cv6o4uule9bi9puqf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPOYEdIQsqWq7Fl92G52wGc7KKyq-TcFc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
