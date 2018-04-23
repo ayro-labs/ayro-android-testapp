@@ -11,7 +11,6 @@ public class CustomApplication extends MultiDexApplication {
   public void onCreate() {
     super.onCreate();
     Settings settings = new Settings(getString(R.string.ayro_token));
-    settings.enableMessagingService();
     Ayro.init(this, settings);
   }
 }
