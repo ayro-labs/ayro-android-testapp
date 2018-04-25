@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     loginChatButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+        String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjVhZGY5MWJhZTk2ZTgwNjg1MjZmNDBhYSJ9.eyJzY29wZSI6InVzZXIiLCJ1c2VySWQiOiIxIiwiaWF0IjoxNTI0NjcwNzgzfQ.6jex0o9laQ_bOFaCYFPbjRwemGT8j8NnwPLq-l2e1sM";
         User user = new User();
         user.setUid("1");
         user.setFirstName("Sandro");
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Map<String, String> properties = new HashMap<>();
         properties.put("Language", Locale.getDefault().getCountry());
         user.setProperties(properties);
-        Ayro.login(user);
+        Ayro.login(user, jwtToken);
       }
     });
 

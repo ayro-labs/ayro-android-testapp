@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Ayro</string>
-    <string name="ayro_token" translatable="false">52be128ce33217f8419e020a714687606eb4178d</string>
+    <string name="ayro_token" translatable="false">3e603b11c1e8ace6bfc47a127ec5df85e11f90ba</string>
     <string name="open_chat">Open chat</string>
     <string name="login">Login</string>
     <string name="logout">Logout</string>
