@@ -7,3 +7,4 @@ gradle.properties
 build
 local.properties
 *.iml
+app/libs
