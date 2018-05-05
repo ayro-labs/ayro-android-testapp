@@ -10,7 +10,7 @@ public class CustomApplication extends MultiDexApplication {
   @Override
   public void onCreate() {
     super.onCreate();
-    Settings settings = new Settings(getString(R.string.ayro_token));
+    Settings settings = new Settings(BuildConfig.APP_TOKEN);
     Ayro.init(this, settings);
   }
 }

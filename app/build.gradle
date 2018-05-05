@@ -11,9 +11,17 @@ android {
     versionName '1.0.0'
   }
   buildTypes {
+    debug {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      buildConfigField('String', 'APP_TOKEN', '"' + project.findProperty('APP_TOKEN') + '"')
+      buildConfigField('String', 'JWT_TOKEN', '"' + project.findProperty('JWT_TOKEN') + '"')
+    }
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      buildConfigField('String', 'APP_TOKEN', '"' + project.findProperty('APP_TOKEN') + '"')
+      buildConfigField('String', 'JWT_TOKEN', '"' + project.findProperty('JWT_TOKEN') + '"')
     }
   }
 }
@@ -23,8 +31,8 @@ dependencies {
   implementation 'com.android.support:multidex:1.0.3'
   implementation 'com.android.support:appcompat-v7:27.1.1'
   implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-  implementation 'com.google.firebase:firebase-core:15.0.0'
-//  implementation 'io.ayro:ayro:0.0.18'
+  implementation 'com.google.firebase:firebase-messaging:15.0.2'
+//  implementation 'io.ayro:ayro:0.0.20'
 
   // Ayro dependencies
   implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -32,7 +40,7 @@ dependencies {
   implementation 'com.android.support:cardview-v7:27.1.1'
   implementation 'com.android.support:support-media-compat:27.1.1'
   implementation 'com.android.support:support-v4:27.1.1'
-  implementation 'com.google.firebase:firebase-messaging:15.0.0'
+  implementation 'com.google.firebase:firebase-messaging:15.0.2'
   implementation 'com.google.code.gson:gson:2.8.2'
   implementation 'com.squareup.picasso:picasso:2.5.2'
   implementation 'com.squareup.retrofit2:retrofit:2.4.0'

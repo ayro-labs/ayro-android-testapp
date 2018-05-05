@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
     loginChatButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjVhZGY5MWJhZTk2ZTgwNjg1MjZmNDBhYSJ9.eyJzY29wZSI6InVzZXIiLCJ1c2VySWQiOiIxIiwiaWF0IjoxNTI0NjcwNzgzfQ.6jex0o9laQ_bOFaCYFPbjRwemGT8j8NnwPLq-l2e1sM";
+        String jwtToken = BuildConfig.JWT_TOKEN;
         User user = new User();
         user.setUid("1");
         user.setFirstName("Sandro");
         user.setLastName("Simas");
         user.setEmail("sandro@ayro.io");
-        user.setPhotoUrl("https://scontent.xx.fbcdn.net/v/t1.0-1/11709651_882143908522388_6031653989057086887_n.jpg?oh=42e99275199e478ebdc1b019445dbd41&oe=5A6A7A5D");
+        user.setPhotoUrl("https://en.gravatar.com/userimage/20045636/1927002100f29c81ae539754f30f5c37.png");
         user.setSignUpDate(new Date());
         Map<String, String> properties = new HashMap<>();
         properties.put("Language", Locale.getDefault().getCountry());
