@@ -27,12 +27,12 @@ android {
 }
 
 dependencies {
-  implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+//  implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
   implementation 'com.android.support:multidex:1.0.3'
   implementation 'com.android.support:appcompat-v7:27.1.1'
   implementation 'com.android.support.constraint:constraint-layout:1.1.0'
   implementation 'com.google.firebase:firebase-messaging:15.0.2'
-//  implementation 'io.ayro:ayro:0.0.20'
+  implementation 'io.ayro:ayro:0.0.20'
 
   // Ayro dependencies
   implementation 'com.android.support:appcompat-v7:27.1.1'

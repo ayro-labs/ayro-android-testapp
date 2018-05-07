@@ -2,7 +2,6 @@ buildscript {
   repositories {
     google()
     jcenter()
-    mavenCentral()
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:3.1.2'
@@ -14,7 +13,7 @@ allprojects {
   repositories {
     google()
     jcenter()
-    mavenCentral()
+    maven { url 'https://raw.githubusercontent.com/ayrolabs/ayro-android/master' }
     flatDir {
       dirs project(':app').file('libs')
     }
