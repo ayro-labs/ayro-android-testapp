@@ -1,10 +1,10 @@
+*.iml
 .idea
 .gradle
 gradle
 gradlew
 gradlew.bat
-gradle.properties
 build
 local.properties
-*.iml
-app/libs/*
+/app/libs/*
+/gradle.properties
